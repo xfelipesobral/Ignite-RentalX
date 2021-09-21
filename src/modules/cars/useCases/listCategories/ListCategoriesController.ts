@@ -7,7 +7,7 @@ class ListCategoriesController {
 
     handle(request: Request, response: Response): Response {
         const categories = this.listCategoriesUseCase.execute()
-        return response.status(201).json(categories)
+        return response.json(categories)
     }
 }
 
