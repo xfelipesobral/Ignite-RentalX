@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import { container } from 'tsyringe'
 
-import { AuthenticateUserUseCase } from './AuthenticateUerUseCase'
+import { AuthenticateUserUseCase } from './AuthenticateUserUseCase'
 
 class AuthenticateUserController {
 

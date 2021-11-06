@@ -4,11 +4,11 @@ import swaggerUi from 'swagger-ui-express'
 
 import './database'
 
-import './shared/container'
+import { AppError } from '@errors/AppErrors'
+import '@shared/container'
 
 import swaggerFile from '../swagger.json'
 import { router } from './routes'
-import { AppError } from './errors/AppErrors'
 
 const app = express()
 app.use(express.json())
