@@ -6,9 +6,9 @@ import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRep
 @injectable()
 class ListCategoriesUseCase {
     constructor(
-        @inject('CaregoriesRepository')
-        private categoriesRepository: ICategoriesRepository) {
-    }
+        @inject('CategoriesRepository')
+        private categoriesRepository: ICategoriesRepository
+    ) { }
 
     async execute(): Promise<Category[]> {
         const categories = await this.categoriesRepository.list()
